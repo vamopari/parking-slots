@@ -28,8 +28,6 @@ class SlotFilter(django_filters.FilterSet):
             except (ValueError, AssertionError) as e:
                 raise ValidationError(
                     'location must be json as {"longitude": <float>, "latitude": <float>}')
-            import pdb
-            pdb.set_trace()
             user_location = Point(float(location_json.get('longitude')),
                                   float(location_json.get('latitude')), srid=4326)
             radius = location_json.get('radius', 10)
