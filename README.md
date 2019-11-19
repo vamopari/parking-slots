@@ -29,4 +29,4 @@ Create new user using user registration API from swagger and use this user for f
 
 Create access token using login api from swagger.
 
-Click on Authorize button in Swagger page and add `Bearer <access_token>` and click authorize. This is add access token for every request made via swagger. access_token will be removed if swagger page is reloaded.
+Click on Authorize button in Swagger page and add `Bearer <access_token>` and click authorize. This will add access token for every request made via swagger. access_token will be removed if swagger page is reloaded.
