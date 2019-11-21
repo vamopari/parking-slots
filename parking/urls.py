@@ -1,4 +1,4 @@
-"""ridecell URL Configuration
+"""Parking URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -20,7 +20,7 @@ from drf_yasg import openapi
 from drf_yasg.views import get_schema_view
 from rest_framework.permissions import AllowAny
 
-api_info = openapi.Info(title="RideCell API", default_version='v1', )
+api_info = openapi.Info(title="Parking API", default_version='v1', )
 
 schema_view = get_schema_view(api_info, public=True, permission_classes=(AllowAny,), )
 
